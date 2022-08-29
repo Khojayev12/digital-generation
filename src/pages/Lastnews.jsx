@@ -2,7 +2,7 @@ import "../assets/styles/home.css";
 import NewsWidget from "../components/newsWidget";
 import { AiOutlineRight } from "react-icons/ai";
 import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function Lastnews(props) {
   const [son, setSon] = useState(true);
@@ -15,6 +15,7 @@ export default function Lastnews(props) {
         console.log(post.id)
         setCounter(counter => [...counter, post]);
       }
+      return 0;
     });
     setSon(false)
   };

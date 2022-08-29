@@ -1,4 +1,3 @@
-import { useParams } from "react-router-dom";
 import { AiOutlineRight, AiOutlineLeft } from "react-icons/ai";
 import { useState } from "react";
 import { IoEye } from "react-icons/io5";

@@ -11,12 +11,12 @@ export default function Oromgoh() {
   const [counter, setCounter] = useState([]);
 
   if (son) {
-    console.log("print");
     News.map((post) => {
       if ("oromgoh" === post.type) {
         console.log(post.id);
         setCounter((counter) => [...counter, post]);
       }
+      return 0;
     });
     setSon(false);
   }

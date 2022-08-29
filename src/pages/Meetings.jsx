@@ -17,6 +17,7 @@ export default function Oromgoh() {
         console.log(post.id);
         setCounter((counter) => [...counter, post]);
       }
+      return 0;
     });
     setSon(false);
   }

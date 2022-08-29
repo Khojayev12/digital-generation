@@ -16,6 +16,7 @@ export default function OAV() {
         console.log(post.id);
         setCounter((counter) => [...counter, post]);
       }
+      return 0;
     });
     setSon(false);
   }
