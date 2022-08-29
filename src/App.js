@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import Header from "./components/Header";
+import AllNews from "./pages/AllNews";
+import Oromgoh from "./pages/Oromgoh";
+import OAV from "./pages/OAV";
+import Meetings from "./pages/Meetings";
+import News from "./news"
+import SinglePage from "./components/SinglePage";
 
+//  font-family: "Montserrat",-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
 function App() {
   return (
+
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+      <Header/>
+        <Routes>
+          {News.map((element)=>{
+            <Route path={"/" + element.id.toString()} key={element.id} element={<SinglePage data={element} />} />
+          })}
+          <Route path="/" element={<Home/>} />
+          <Route path="/all-news" element={<AllNews/>} />
+          <Route path="/oromgoh" element={<Oromgoh/>} />
+          <Route path="/meetings" element={<Meetings/>} />
+          <Route path="/oav" element={<OAV/>} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
