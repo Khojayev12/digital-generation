@@ -17,7 +17,7 @@ export default function SinglePage(props) {
     }
   };
   return (
-    <div className="single-page-news">
+    <div className="single-page-news load-anim">
       <div className="single-image">
         <button className="img-left" onClick={toLeft}>
           <AiOutlineLeft className="img-left-icon" />

@@ -21,7 +21,7 @@ export default function OAV() {
     setSon(false);
   }
   return (
-    <div className="all-news-page">
+    <div className="all-news-page load-anim">
       <div className="last-title" style={{ marginTop: "20px" }}>
         <span>OAV biz haqimizda </span>
         <Link to="/" className="my-link">

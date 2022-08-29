@@ -21,7 +21,7 @@ export default function Oromgoh() {
     setSon(false);
   }
   return (
-    <div className="all-news-page">
+    <div className="all-news-page load-anim">
       <div className="last-title" style={{ marginTop: "20px" }}>
         <span> IT Oromgohda oid yangiliklar </span>
         <Link to="/" className="my-link">

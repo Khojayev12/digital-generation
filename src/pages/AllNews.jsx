@@ -7,7 +7,7 @@ import { AiOutlineLeft } from "react-icons/ai";
 
 export default function AllNews() {
   return (
-    <div className="all-news-page">
+    <div className="all-news-page load-anim">
       <div className="last-title" style={{ marginTop: "20px" }}>
         <span> Barcha yangiliklar </span>
         <Link to="/" className="my-link">

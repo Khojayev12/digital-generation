@@ -4,7 +4,7 @@ import Lastnews from "./Lastnews";
 
 export default function Home() {
   return (
-    <div className="home-page">
+    <div className="home-page load-anim">
       <Lastnews
         mainTitle="So'nggi yangiliklar"
         id="latest"

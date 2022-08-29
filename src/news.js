@@ -15,8 +15,35 @@ import pic82 from "./assets/images/pic82.jpeg";
 import pic83 from "./assets/images/pic83.jpeg";
 import pic9 from "./assets/images/pic9.jpeg";
 import pic10 from "./assets/images/pic10.jpeg";
+import pic11 from "./assets/images/pic11.jpeg";
+import pic12 from "./assets/images/pic12.jpeg";
+import pic13 from "./assets/images/pic13.jpeg";
+import pic14 from "./assets/images/pic14.jpeg";
+import pic121 from "./assets/images/pic121.jpeg";
+import pic122 from "./assets/images/pic122.jpeg";
+import pic123 from "./assets/images/pic123.jpeg";
+import pic124 from "./assets/images/pic124.jpeg";
 
 const News = [
+  {
+    id: 1012,
+    type: "meetings",
+    watches: "122",
+    title:
+      "Qisqa tanaffusdan so’ng, mahorat darslarimiz yana boshlandi Ayni damda esa biz Namangan shahridamiz",
+    photos: [pic121, pic122, pic123, pic124],
+    date: "18.08.2022",
+    text: "'Zamin Education' hamda “Raqamli avlod” loyihasi doirasida tashkil etilgan mahorat darslari 46-sonli zaif eshituvchi bolalar uchun ixtisoslashtirilgan davlat maktab-internati o’quvchilari, Oilaviy bolalar uyi tarbiyalanavuchilar hamda Namangan shahridagi Prezident maktabi o’quvchilari uchun bo’lib o’tmoqda. Bilimga chanqoq o’quvchi yoshlarga mutaxassislar tomonidan Robototexnika va Dasturlash bo’yicha mahorat darslari o’rgatilmoqda. ",
+  },
+  {
+    id: 1011,
+    type: "meetings",
+    watches: "154",
+    title: "“Raqamli avlod” jamoasi Farg’onada ",
+    photos: [pic11, pic12, pic13, pic14],
+    date: "18.08.2022",
+    text: "«Digital Generation Uzbekistan» nodavlat notijorat muassasasi,  'Zamin' xalqaro jamoat fondi hamda Prezident ta'lim muassasalari agentligi bilan birgalikda 'Zamin Education' loyihasi doirasida tashkil etilgan mahorat darslari 90-sonli zaif eshituvchi bolalar uchun ixtisoslashtirilgan davlat maktab-internati o’quvchilari, Oilaviy bolalar uyi tarbiyalanuvchilari hamda Farg’ona shahridagi Prezident maktabi o’quvchilari uchun bo’lib o’tmoqda.",
+  },
   {
     id: 1010,
     type: "meetings",

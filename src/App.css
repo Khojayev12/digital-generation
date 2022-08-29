@@ -6,6 +6,21 @@ body {
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
     "Helvetica Neue", sans-serif;
 }
+.load-anim {
+  animation: loadAnim 1s 1;
+}
+
+@keyframes loadAnim {
+  from {
+    opacity: 0;
+    transform: translateY(0) scale(1);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
 html {
   scroll-behavior: smooth;
 }
