@@ -13,8 +13,30 @@ import pic72 from "./assets/images/pic72.jpeg";
 import pic81 from "./assets/images/pic81.jpeg";
 import pic82 from "./assets/images/pic82.jpeg";
 import pic83 from "./assets/images/pic83.jpeg";
+import pic9 from "./assets/images/pic9.jpeg";
+import pic10 from "./assets/images/pic10.jpeg";
 
 const News = [
+  {
+    id: 1010,
+    type: "meetings",
+    watches: "382",
+    title:
+      "Online “Raqamli avlod - 2022” IT oromgohi haqida ma'lumot olishni istaysizmi?",
+    photos: [pic10],
+    date: "18.08.2022",
+    text: "Bizda ajoyib yangilik! DG Contest - Respublika miqyosida o'tkaziluvchi dasturchilar musobaqasi haqida Sunnatillo Hojiyev va Muhammadkarim To'xtaboyev bilan suhbat olib boramiz! Bugun soat 18:00da bo'lib o'tadigan streamda siz oromgoh va boshqa tanlovlar haqida barcha savollaringizga javob olasiz! Streamda ko'rishguncha  https://youtu.be/IAaoVNAOufs",
+  },
+  {
+    id: 1009,
+    type: "ordinary",
+    watches: "264",
+    title:
+      "O’z bilimlaringizni sinashga nima deysiz? IT musobaqada ishtirok etishgachi?",
+    photos: [pic9],
+    date: "25.08.2022",
+    text: "24-avgustdan 28-avgustga qadar quyidagi yo’nalishlar bo’yicha online hamda offline tarzda tashkil etiladigan musobaqalarga taklif etamiz: DG Contest 24-avgust (online) 27-avgust (offline) final Robototexnika Labirint (smart car) 28-avgust (offline) Oromgohimizga tashrif buyuring, faol ishtirokchiga aylaning va qimmatbaho sovg’alarni qo’lga kiriting Ro’yxatdan o’tish uchun havola musobaqa.raqamliavlod.uz ",
+  },
   {
     id: 1008,
     type: "oromgoh",

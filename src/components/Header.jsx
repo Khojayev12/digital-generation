@@ -6,12 +6,7 @@ export default function Header() {
   return (
     <div className="header">
       <img src={logo} alt="" className="header-logo" />
-      <div className="header-title">
-        <div className="header-title-up">
-          DIGITAL GENERATION <span className="header-uz">UZBEKISTAN</span>
-        </div>
-        <div className="header-shior">learn, share, inspire</div>
-      </div>
+      
       <div className="header-menus">
       <div className="header-single-menu">
           <Link to="/" className="my-href">

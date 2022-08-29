@@ -38,7 +38,10 @@
 }
 .card-img-tag {
   border-radius: 15px;
+  height: 250px;
   width: 100%;
+  object-fit: cover;
+
 }
 .card-title {
   height: 90px;
