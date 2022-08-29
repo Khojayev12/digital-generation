@@ -23,7 +23,7 @@ export default function SinglePage(props) {
           <AiOutlineLeft className="img-left-icon" />
         </button>
 
-        <img src={props.data.photos[picnum]} alt="" className="single-img" />
+        <img src={props.data.photos[picnum]} alt="" className="single-img" height="500px" />
 
         <button className="img-right" onClick={toRight}>
           <AiOutlineRight className="img-right-icon" />
