@@ -38,7 +38,9 @@
   color: rgb(102, 137, 185);
 }
 .header-menus{
-  margin-left: 20px;
+  text-align: center;
+  width: 700px;
+  margin-left: calc(50% - 460px );
 }
 .header-single-menu{
   margin-left: 20px;

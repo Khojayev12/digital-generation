@@ -8,23 +8,23 @@ export default function Lastnews(props) {
   const [son, setSon] = useState(true);
   const [counter, setCounter] = useState([]);
 
-  if(son){
+  if (son) {
     console.log("print");
     props.newsData.map((post) => {
       if (props.type === post.type || props.type === "all") {
-        console.log(post.id)
-        setCounter(counter => [...counter, post]);
+        console.log(post.id);
+        setCounter((counter) => [...counter, post]);
       }
       return 0;
     });
-    setSon(false)
-  };
+    setSon(false);
+  }
 
   return (
-    <div className="last-sec" >
+    <div className="last-sec">
       <div className="last-title" id={props.id}>
         <span>{props.mainTitle}</span>
-        <Link to="all-news" className="my-link">
+        <Link to={props.go} className="my-link">
           <button className="latest-more">
             Ko'proq <AiOutlineRight className="more-icon" />
           </button>
@@ -33,7 +33,7 @@ export default function Lastnews(props) {
       {counter.slice(0, 6).map((item) => {
         return (
           <NewsWidget
-          id={item.id}
+            id={item.id}
             key={item.id}
             photo={item.photos[0]}
             title={item.title}

@@ -19,20 +19,33 @@ export default function SinglePage(props) {
   return (
     <div className="single-page-news load-anim">
       <div className="single-image">
-        <button className="img-left" onClick={toLeft}>
-          <AiOutlineLeft className="img-left-icon" />
-        </button>
+        {picnum === 0 ? (
+          <></>
+        ) : (
+          <button className="img-left" onClick={toLeft}>
+            <AiOutlineLeft className="img-left-icon" />
+          </button>
+        )}
 
-        <img src={props.data.photos[picnum]} alt="" className="single-img" height="500px" />
+        <img
+          src={props.data.photos[picnum]}
+          alt=""
+          className="single-img"
+          height="500px"
+        />
 
-        <button className="img-right" onClick={toRight}>
-          <AiOutlineRight className="img-right-icon" />
-        </button>
+        {picnum === props.data.photos.length - 1 ? (
+          <></>
+        ) : (
+          <button className="img-right" onClick={toRight}>
+            <AiOutlineRight className="img-right-icon" />
+          </button>
+        )}
       </div>
       <div className="single-title">{props.data.title}</div>
       <div className="single-extra">
-        Sana: {props.data.date}{" "}
-        <IoEye className="single-watch" /> {props.data.watches}{" "}
+        Sana: {props.data.date} <IoEye className="single-watch" />{" "}
+        {props.data.watches}{" "}
       </div>
       <div className="single-text">{props.data.text}</div>
     </div>

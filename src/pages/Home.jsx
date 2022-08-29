@@ -11,6 +11,7 @@ export default function Home() {
         newsData={News}
         type="all"
         posts={6}
+        go="/all-news"
       />
       <Lastnews
         mainTitle="Uchrashuvlar"
@@ -18,6 +19,7 @@ export default function Home() {
         newsData={News}
         type="meetings"
         posts={6}
+        go="/meetings"
       />
       <Lastnews
         mainTitle="IT oromgohga oid yangiliklar"
@@ -25,6 +27,7 @@ export default function Home() {
         newsData={News}
         type="oromgoh"
         posts={6}
+        go="/oromgoh"
       />
       <Lastnews
         mainTitle="OAV biz haqimizda"
@@ -32,6 +35,7 @@ export default function Home() {
         newsData={News}
         type="oav"
         posts={6}
+        go="/oav"
       />
     </div>
   );
