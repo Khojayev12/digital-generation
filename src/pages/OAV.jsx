@@ -29,7 +29,7 @@ export default function OAV() {
           </button>
         </Link>
       </div>
-      {counter.map((item) => {
+      {counter.slice(0, 6).map((item) => {
         return (
           <NewsWidget
             photo={item.photos[0]}

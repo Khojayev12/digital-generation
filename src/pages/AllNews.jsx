@@ -19,6 +19,7 @@ export default function AllNews() {
       {News.map((item) => {
         return (
           <NewsWidget
+            id={item.id}
             photo={item.photos[0]}
             key={item.id}
             title={item.title}

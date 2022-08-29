@@ -29,9 +29,10 @@ export default function Lastnews(props) {
           </button>
         </Link>
       </div>
-      {counter.slice(0, 5).map((item) => {
+      {counter.slice(0, 6).map((item) => {
         return (
           <NewsWidget
+          id={item.id}
             key={item.id}
             photo={item.photos[0]}
             title={item.title}

@@ -6,15 +6,89 @@ body {
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
     "Helvetica Neue", sans-serif;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
-.more-icon-back{
+.more-icon-back {
   margin-bottom: -3px;
 }
-.single-page-news{
+.single-page-news {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 130px;
+}
+.single-image {
+  position: absolute;
+  text-align: center;
   width: 100%;
-  height: 100vh;
-  background-color: red;
-  margin-top: 350px;
+  height: 500px;
+}
+.single-img {
+  height: 100%;
+}
+
+.img-left {
+  color: rgb(163, 167, 174);
+  font-size: 25px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  position: absolute;
+  top: 49%;
+  left: 0px;
+  border: 1px solid rgb(163, 167, 174);
+  border-radius: 5px;
+  transition: all 0.3s ease-in;
+}
+.img-left:hover {
+  background-color: rgb(163, 167, 174);
+  color: white;
+}
+.img-right:hover {
+  background-color: rgb(163, 167, 174);
+  color: white;
+}
+.img-right {
+  color: rgb(163, 167, 174);
+  font-size: 25px;
+  padding: 10px;
+  transition: all 0.3s ease-in;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  position: absolute;
+  top: 49%;
+  right: 0px;
+  border: 1px solid rgb(163, 167, 174);
+  border-radius: 5px;
+}
+.single-title{
+  width: 100%;
+  margin-top: 540px;
+  font-size: 21px;
+  line-height: 30px;
+  color: black;
+  font-weight: 700;
+}
+.single-text{
+  width: 90%;
+  margin-top: 40px;
+  font-size: 17px;
+  line-height: 24px;
+  color: black;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+.single-watch{
+  margin-bottom: -2px;
+  margin-left: 15px;
+}
+.single-extra{
+  display: block;
+  width: 100%;
+  text-align: left;
 }
