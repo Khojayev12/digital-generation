@@ -1,0 +1,31 @@
+.footer {
+  width: 100vw;
+  background-color: rgb(14, 29, 50);
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+}
+.footer-logo {
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+.footer-social {
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.social{
+    width: 50px;
+    font-size: 25px;
+    display: inline-block;
+    color: white;
+    transition: all 0.3s;
+}
+.social:hover{
+    transform: scale(1.2)}
+.my-link{
+    color: unset;
+    text-decoration: unset;
+}
