@@ -9,10 +9,8 @@ export default function Lastnews(props) {
   const [counter, setCounter] = useState([]);
 
   if (son) {
-    console.log("print");
     props.newsData.map((post) => {
       if (props.type === post.type || props.type === "all") {
-        console.log(post.id);
         setCounter((counter) => [...counter, post]);
       }
       return 0;

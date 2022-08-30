@@ -5,6 +5,7 @@ import NewsWidget from "../components/newsWidget";
 import { Link } from "react-router-dom";
 import { AiOutlineLeft } from "react-icons/ai";
 import { useState } from "react";
+import Footer from "../components/Footer";
 
 export default function OAV() {
   const [son, setSon] = useState(true);
@@ -20,7 +21,7 @@ export default function OAV() {
     });
     setSon(false);
   }
-  return (
+  return (<>
     <div className="all-news-page load-anim">
       <div className="last-title" style={{ marginTop: "20px" }}>
         <span>OAV biz haqimizda </span>
@@ -41,6 +42,6 @@ export default function OAV() {
           />
         );
       })}
-    </div>
+    </div><Footer /></>
   );
 }

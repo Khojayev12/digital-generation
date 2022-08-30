@@ -23,8 +23,19 @@ import pic121 from "./assets/images/pic121.jpeg";
 import pic122 from "./assets/images/pic122.jpeg";
 import pic123 from "./assets/images/pic123.jpeg";
 import pic124 from "./assets/images/pic124.jpeg";
+import pic130 from "./assets/images/pic13.png";
 
 const News = [
+  {
+    id: 1013,
+    type: "oav",
+    watches: "122",
+    title:
+      "“Rаqаmli аvlod-2022” IT-oromgohi ",
+    photos: [pic130],
+    date: "26.08.2022",
+    text: "Joriy yilning 25-30-avgust kunlari Prezident taʼlim muassasalari agentligi, “Zamin” Xalqaro jamoat fondi va “Digital Generation Uzbekistan” NNT bilan hamkorlikda Mustaqilligimizning 31 yilligiga bagʼishlangan “Raqamli avlod – 2022” IT oromgohi doirasida mahorat darslari boʼlib oʼtmoqda.",
+  },
   {
     id: 1012,
     type: "meetings",

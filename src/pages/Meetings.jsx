@@ -5,7 +5,7 @@ import NewsWidget from "../components/newsWidget";
 import { Link } from "react-router-dom";
 import { AiOutlineLeft } from "react-icons/ai";
 import { useState } from "react";
-
+import Footer from "../components/Footer";
 export default function Oromgoh() {
   const [son, setSon] = useState(true);
   const [counter, setCounter] = useState([]);
@@ -21,7 +21,7 @@ export default function Oromgoh() {
     });
     setSon(false);
   }
-  return (
+  return (<>
     <div className="all-news-page load-anim">
       <div className="last-title" style={{ marginTop: "20px" }}>
         <span> Uchrashuvlar </span>
@@ -42,6 +42,6 @@ export default function Oromgoh() {
           />
         );
       })}
-    </div>
+    </div><Footer /></>
   );
 }

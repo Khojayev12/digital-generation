@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function newsWidget(props) {
   return (
-    <Link to={"/post/" + props.id} className="my-link" >
+    <Link to={"/post/" + props.id} className="my-link">
       <div className="news-widget" key={props.id}>
         <div className="card-img">
           <img src={props.photo} alt="" className="card-img-tag" />

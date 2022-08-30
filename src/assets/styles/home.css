@@ -41,7 +41,6 @@
   height: 250px;
   width: 100%;
   object-fit: cover;
-
 }
 .card-title {
   height: 90px;
@@ -126,4 +125,34 @@
 .my-link {
   color: unset;
   text-decoration: unset;
+}
+
+
+
+@media screen and (min-width: 100px) and (max-width: 768px) {
+  .last-title {
+    font-size: 17px;
+  }
+  .last-sec {
+    text-align: center;
+    width: 95%;
+    margin-left: 2.5%;
+    height: min-content;
+  }
+  .latest-more {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: -10px;
+  }
+  .card-title {
+    font-size: 17px;
+    font-weight: 700;
+    height: min-content;
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 768px) {
+  .card-title {
+    height: 90px;
+  }
 }

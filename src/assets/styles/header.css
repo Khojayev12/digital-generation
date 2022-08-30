@@ -29,7 +29,7 @@
   font-weight: 500;
 }
 .header-shior {
-    margin-left: 30px;
+  margin-left: 30px;
   font-size: 17px;
   line-height: 20px;
   text-align: center;
@@ -37,25 +37,107 @@
   font-weight: 500;
   color: rgb(102, 137, 185);
 }
-.header-menus{
+.header-menus {
   text-align: center;
   width: 700px;
-  margin-left: calc(50% - 460px );
+  margin-left: calc(50% - 460px);
 }
-.header-single-menu{
+.header-single-menu {
   margin-left: 20px;
   display: inline-block;
   font-size: 17px;
   line-height: 24px;
   margin-top: 38px;
   font-weight: 400;
-  transition:  all 0.5s ease-in;
+  transition: all 0.5s ease-in;
   border-bottom: 1px solid white;
 }
-.header-single-menu:hover{
+.header-single-menu:hover {
   border-bottom: 1px solid black;
 }
-.my-href{
+.my-href {
   color: unset;
   text-decoration: unset;
+}
+@media screen and (min-width: 768px) {
+  .mobile-header {
+    display: none;
+  }
+}
+@media screen and (min-width: 120px) and (max-width: 768px) {
+  .header {
+    display: none;
+  }
+  .mobile-header {
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 70px;
+    background-color: white;
+    box-shadow: rgb(236, 236, 236) 0px 5px 10px 3px;
+  }
+  .header-logo {
+    display: inline-block;
+    width: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+  .menu-hamburger {
+    margin-top: 17.5px;
+    margin-right: 10px;
+    font-size: 35px;
+    color: rgb(70, 101, 170);
+  }
+  .mob-menu {
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    transition: all 1s;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 55px 15px;
+  }
+  .menu-active {
+    transform: translateY(0px);
+  }
+  .menu-deactive {
+    transform: translateY(-1000vh);
+  }
+  .menu-exit-btn {
+    position: absolute;
+    top: 17.5px;
+    right: 10px;
+    font-size: 35px;
+    color: rgb(70, 101, 170);
+  }
+  .mob-menu-sections {
+    width: 100%;
+    background-color: white;
+    margin-top: 0px;
+  }
+  .header-single-menu {
+    margin-left: 10%;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    width: 80%;
+    text-align: center;
+    height: calc(50px - 13px);
+    background: linear-gradient(
+      to right,
+      rgb(144, 145, 227),
+      rgb(103, 101, 232)
+    );
+    transition: none;
+    padding-top: 13px;
+  }
+  .header-single-menu:hover {
+    border-bottom: none;
+  }
 }
